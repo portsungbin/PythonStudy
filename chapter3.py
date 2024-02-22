@@ -35,3 +35,34 @@ print(python.find("Java")) #에러가 나지 않고 없으면 -1로 나타냄
 #print(python.index("Java")) #Java가 없기 때문에 에러를 내버리고 프로그램을 끝내버림
 
 print(python.count("n")) #n이 몇개인가
+
+print("a" + "b")
+print("a", "b")
+print("나는 %d살입니다." % 20)
+print("나는 %s을 좋아합니다." % "파이썬")
+print("Apple 은 %c로 시작해요" % "A")
+
+print("나는 %s살입니다." % 20) # %s 는 다 사용가능
+print("나는 %s색과 %s색을 좋아해요." % ("파란", "빨강"))
+
+print("나는 {}살 입니다.".format(20))
+print("나는 {}색과 {}색을 좋아해요.".format("파란", "빨강"))
+print("나는 {1}색과 {0}색을 좋아해요.".format("파란", "빨강")) # "파란"이 0번쨰 "빨강"이 1번째
+
+print("나는 {age}살이며 {color}색을 좋아해요.".format(age = 20, color = "빨강"))
+
+age = 20
+color = "빨강"
+print(f"나는 {age}살이며 {color}색을 좋아해요.") # 앞에 f를 붙이면 변수값 가져가서 쓰기 가능
+
+
+#탈출문자
+print("백문이 불여일견 \n백견이 불여일타") # \n = 줄바꿈
+print('저는 "나도코딩"입니다')# 저는"나도코딩"입니다 만들기
+print("저는 \"나도코딩\"입니다") #역슬러시
+# \\ : 문장 내에서 \
+print("C:\\Users\\ㅅㅂ\\OneDrive\\바탕 화면\\pythonstudy\\PythonStudy>") # 2개씩 적어야 나옴
+
+print("red apple \rpine") #\r (pine)커서를 맨앞으로 이동
+print("red\bapple") # \b : 백스페이스(한글자 삭제)
+print("red\tapple") # \t : 키보드 탭 누른효과
