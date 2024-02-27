@@ -29,7 +29,7 @@ print(lst)
 shuffle(lst)
 print(lst)
 
-win = sample(lst, 4)
+win = sample(lst, 4) #lst 의 4개만큼 샘플로 뽑겠다
 
 print("--당첨자 발표--")
 print("치킨 당첨자 : {0}" .format(win[0]))
