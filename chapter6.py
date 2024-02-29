@@ -18,6 +18,11 @@ def withdraw(balance, money): #출금
     
 def night(balance, money):
     commission = 100 #야간수수료 100원
+    if balance <= money:
+        print("출금이 완료되지 않았습니다 잔액은 {0}원 입니다".format(balance))
+        if balance - money - commission < 0:
+            return commission, money
+    
     
     return commission, balance - money - commission
     
